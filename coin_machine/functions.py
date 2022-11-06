@@ -47,6 +47,7 @@ def run_coin_machine(amount_str):
 
     return possible_combos
 
+
 def _get_coins_combinations(amount, denominations, combos, i=0, parent=None):
     if parent is None:
         parent = []
@@ -78,11 +79,13 @@ def _get_coins_combinations(amount, denominations, combos, i=0, parent=None):
                 s += c
         return s
 
+
 def run_coin_machine_v2(amount_str):
     start = time.time()
     available_coins = [1, 2, 5, 10, 20, 50, 100, 200]
     try:
         pound, pence = amount_str.replace('£', '').split('-')
+        pence = 0 if pence == '' else pence  # support amounts like £2-
         amount = int(pound) * 100 + int(pence)
     except:
         raise Exception('Input should be in this format: £x-xx, eg £2-31, £0-54')
