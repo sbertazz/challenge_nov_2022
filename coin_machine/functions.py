@@ -64,13 +64,9 @@ def _get_coins_combinations(amount, denominations, combos, i=0, parent=None):
             coin = denominations[i]
 #             print(f'coin {coin}, amount {amount}')
             if amount - coin < 0:
-#                 print(f'primo')
                 break
-#                 new_parent = parent.copy()
-#                 print(f'new parent: {new_parent}')
 #                 c = _get_num_of_changes(amount - coin, denominations, i+1, new_parent)
             else:
-#                 print(f'secondo')
                 new_parent = parent.copy() + [coin]
 #                 print(f'new parent: {new_parent}')
                 c = _get_coins_combinations(amount - coin, denominations, combos, i, new_parent)
