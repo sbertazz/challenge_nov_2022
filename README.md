@@ -11,6 +11,7 @@ Therefore I just googled and found a solution to a similar problem (just countin
 This performed quite well, but recursion was creating problems. 
 I then noticed I was trying to solve the wrong problem - returning all the combinations rather than number of combinations, but now I don't have time to change it back. 
 I'd need to go back to look into this but time is up!
+Tests can be run with pytest
 
 Energy Demand: 
 All the info is in the jupyter file. If you can't get the jupyter to run, I saved the output in a html file.
