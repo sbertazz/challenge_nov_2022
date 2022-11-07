@@ -1,5 +1,7 @@
 # Instructions:
-instruction 
+The project was created with Python 3.7.9
+The pip environment for the project can be created using the requirements.txt file.
+
 
 Coin machine: 
 it can be run via the coin_machine.main file.
